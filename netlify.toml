@@ -1,2 +1,4 @@
 [build]
+  # Sin build: solo funciones. Evita que Netlify adivine (p. ej. "hugo").
+  command = "echo 'sin build'"
   publish = "public"
