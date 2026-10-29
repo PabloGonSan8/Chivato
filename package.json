@@ -1,0 +1,15 @@
+{
+  "name": "chivato",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "check": "node --env-file=.env index.js --dry-run",
+    "test-telegram": "node --env-file=.env index.js --test-telegram"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

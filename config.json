@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "name": "iPad A16 11\" 128GB Wi-Fi",
+      "targetPrice": 380,
+      "stores": [
+        {
+          "name": "ShopDutyFree",
+          "colors": {
+            "Plata": "https://www.shopdutyfree.es/comprar-ipad-11-wi-fi-128gb-plata",
+            "Azul": "https://www.shopdutyfree.es/comprar-ipad-11-wi-fi-128gb-azul",
+            "Amarillo": "https://www.shopdutyfree.es/comprar-ipad-11-wi-fi-128gb-amarillo",
+            "Rosa": "https://www.shopdutyfree.es/comprar-ipad-11-wi-fi-128gb-rosa"
+          }
+        },
+        {
+          "name": "El Corte Inglés",
+          "colors": {
+            "Azul": "https://www.elcorteingles.es/electronica/A54871211-0195950086546-pr-apple-ipad-11-2025-a16-wi-fi-azul-128-gb/",
+            "Amarillo": "https://www.elcorteingles.es/electronica/A54871211-0195950086775-pr-apple-ipad-11-2025-a16-wi-fi-amarillo-128-gb/",
+            "Plata": "https://www.elcorteingles.es/electronica/A54871211-0195950086317-pr-apple-ipad-11-2025-a16-wi-fi-plata-128-gb/",
+            "Rosa": "https://www.elcorteingles.es/electronica/A54871211-0195950087000-pr-apple-ipad-11-2025-a16-wi-fi-rosa-128-gb/"
+          }
+        },
+        {
+          "name": "MediaMarkt",
+          "colors": {
+            "Plata": "https://www.mediamarkt.es/es/product/_apple-ipad-11agen-128gb-plata-wifi-109-retina-chip-a16-bionic-ipados-18-cable-de-carga-usbc-sin-adaptador-de-corriente-1595893.html",
+            "Azul": "https://www.mediamarkt.es/es/product/_apple-ipad-11agen-128gb-azul-wifi-109-retina-chip-a16-bionic-ipados-18-cable-de-carga-usbc-sin-adaptador-de-corriente-1595894.html",
+            "Amarillo": "https://www.mediamarkt.es/es/product/_apple-ipad-11agen-128gb-amarillo-wifi-109-retina-chip-a16-bionic-ipados-18-cable-de-carga-usbc-sin-adaptador-de-corriente-1595895.html",
+            "Rosa": "https://www.mediamarkt.es/es/product/_apple-ipad-11agen-128gb-rosa-wifi-109-retina-chip-a16-bionic-ipados-18-cable-de-carga-usbc-sin-adaptador-de-corriente-1595896.html"
+          }
+        },
+        {
+          "name": "K-Tuin",
+          "colors": {
+            "Plata": "https://www.k-tuin.com/ipad-11-128-gb-plata",
+            "Azul": "https://www.k-tuin.com/ipad-11-128-gb-azul",
+            "Amarillo": "https://www.k-tuin.com/ipad-11-128-gb-amarillo",
+            "Rosa": "https://www.k-tuin.com/ipad-11-128-gb-rosa"
+          }
+        }
+      ]
+    }
+  ]
+}
