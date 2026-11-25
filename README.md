@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/PabloGonSan8/Chivato/actions/workflows/test.yml"><img src="https://github.com/PabloGonSan8/Chivato/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
   <img src="https://img.shields.io/badge/Node-%E2%89%A522-339933?logo=nodedotjs&logoColor=white" alt="Node 22+">
   <img src="https://img.shields.io/badge/Netlify-Functions-00C7B7?logo=netlify&logoColor=white" alt="Netlify Functions">
   <img src="https://img.shields.io/badge/Telegram-Bot-26A5E4?logo=telegram&logoColor=white" alt="Telegram Bot">
@@ -79,6 +80,22 @@ pnpm check             # revisa precios y muestra el mensaje sin enviarlo
 pnpm start             # revisa precios y envía el aviso
 ```
 
+## 🧪 Tests
+
+```sh
+pnpm test
+```
+
+Los tests no usan la red: sustituyen `fetch` por páginas HTML de ejemplo. Comprueban:
+- la lectura de precios en distintos formatos;
+- la extracción por JSON-LD, meta tags y `selectors`;
+- que los productos sin stock se ignoran;
+- los errores de captcha, de página sin precio y HTTP;
+- cuándo se envía aviso y cuándo no;
+- que `config.json` es válido.
+
+GitHub Actions los ejecuta en cada push y en cada PR (badge de arriba). Si añades un producto con una URL mal escrita o un `targetPrice` que no es un número, el test falla.
+
 ## 🔐 Variables de entorno
 
 | Variable | Para qué |
@@ -118,6 +135,9 @@ Añade un objeto a `products` en `config.json`:
 | Tienda | Estado |
 |---|---|
 | ShopDutyFree, El Corte Inglés, MediaMarkt, K-Tuin | JSON-LD / meta |
+| Ofertitastop | JSON-LD |
+| PcComponentes | ⚠️ Bloquea (HTTP 403) |
+| Trust (web oficial) | ❌ Solo muestra el precio recomendado (PVP), no ofertas |
 | Amazon | ⚠️ Bloquea con captcha las peticiones desde Node (ver abajo) |
 
 **Amazon:** desde Node (que es lo que usa Netlify) devuelve siempre la página de captcha, así que el producto aparece como "⚠️ Sin datos". Los `selectors` de `config.json` funcionan cuando la página sí carga. Para seguir precios de Amazon de forma fiable: alertas de [CamelCamelCamel](https://es.camelcamelcamel.com/) o la API de [Keepa](https://keepa.com/).
@@ -141,4 +161,6 @@ config.json                       productos y tiendas
 netlify/functions/chivato.mjs     endpoint /api/check (cron)
 netlify/functions/deploy-succeeded.mjs  aviso tras deploy
 public/index.html                 página estática
+test/chivato.test.js              tests (node --test)
+.github/workflows/test.yml        CI en GitHub Actions
 ```
