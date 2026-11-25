@@ -32,7 +32,7 @@ export const escapeHtml = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // Acepta "431,77 €", "1.049,00", "449.00", 449...
-function parsePrice(raw) {
+export function parsePrice(raw) {
   if (raw == null) return null;
   if (typeof raw === 'number') return raw > 0 ? raw : null;
 

@@ -41,6 +41,25 @@
           }
         }
       ]
+    },
+    {
+      "name": "GXTrust Xyra Teclado Mecánico",
+      "targetPrice": 40,
+      "stores": [
+        {
+          "name": "Amazon",
+          "selectors": ["#corePrice_feature_div .a-offscreen", ".a-price .a-offscreen"],
+          "colors": {
+            "Blanco": "https://www.amazon.es/dp/B0FJG5CNRC"
+          }
+        },
+        {
+          "name": "Ofertitastop",
+          "colors": {
+            "Blanco": "https://ofertitastop.es/product/gxtrust-gxt-872-xyra-teclado-mecanico-tkl"
+          }
+        }
+      ]
     }
   ]
 }
