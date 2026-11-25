@@ -41,6 +41,19 @@
           }
         }
       ]
+    },
+    {
+      "name": "GXTrust Xyra Teclado Mecánico",
+      "targetPrice": 40,
+      "stores": [
+        {
+          "name": "Amazon",
+          "selectors": ["#corePrice_feature_div .a-offscreen", ".a-price .a-offscreen"],
+          "colors": {
+            "Blanco": "https://www.amazon.es/dp/B0FJG5CNRC"
+          }
+        }
+      ]
     }
   ]
 }
